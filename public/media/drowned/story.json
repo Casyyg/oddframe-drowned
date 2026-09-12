@@ -1,0 +1,292 @@
+{
+  "id": "drowned-v1",
+  "title": "The Drowned Thirteenth Floor",
+  "startSceneId": "button",
+  "audioNote": "Every available clip contains audio. Revised clips use Flow-generated audio or local synthetic English dialogue with ambience. Optional English captions accompany locally voiced clips. Final listening and lip-sync review remains required.",
+  "scenes": [
+    {
+      "id": "button",
+      "chapter": "01 · The extra floor",
+      "title": "One button too many",
+      "video": "press-b13-v2.mp4",
+      "poster": "button-v2.jpeg",
+      "duration": 8,
+      "text": [
+        "You are Alex Morgan. It is 12:43 a.m. Your building has twelve floors.",
+        "A new button glows beneath the others: B13. You press it. The lift begins to descend."
+      ],
+      "dialogue": [],
+      "choices": [
+        {
+          "id": "descend",
+          "label": "Wait for the doors",
+          "next": "doors"
+        }
+      ]
+    },
+    {
+      "id": "doors",
+      "chapter": "01 · The extra floor",
+      "title": "The hotel below",
+      "video": "doors-open-sound-v2.mp4",
+      "poster": "closed.jpeg",
+      "duration": 8,
+      "text": [
+        "The doors open onto a waterlogged hotel corridor. Salt hangs in the air.",
+        "At the far end, an attendant stands with his back to you. He does not turn, even when he speaks."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Attendant",
+          "line": "Welcome back. We have been expecting the surface guest."
+        }
+      ],
+      "choices": [
+        {
+          "id": "look",
+          "label": "Look at the water",
+          "next": "water"
+        }
+      ],
+      "captions": "doors-en-v2.vtt"
+    },
+    {
+      "id": "water",
+      "chapter": "01 · The extra floor",
+      "title": "Water should fall",
+      "video": "water-rises-ring-v3.mp4",
+      "poster": "water.jpeg",
+      "duration": 2.5,
+      "text": [
+        "Droplets pull away from the wet carpet and climb the wall. Nothing on this floor falls the way it should.",
+        "Beside you, the emergency telephone starts to ring."
+      ],
+      "dialogue": [],
+      "clue": "The water moves upward. This floor does not obey the world above.",
+      "choices": [
+        {
+          "id": "close",
+          "label": "Press CLOSE DOOR",
+          "next": "closing"
+        },
+        {
+          "id": "answer",
+          "label": "Answer the emergency phone",
+          "next": "phone"
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "chapter": "02 · No way up",
+      "title": "Close the doors",
+      "video": "doors-close-sound-v2.mp4",
+      "poster": "corridor.jpeg",
+      "duration": 3,
+      "text": [
+        "You press CLOSE DOOR. The brass doors slide shut. For a moment, the lift is silent."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Lift",
+          "line": "Door obstruction detected."
+        }
+      ],
+      "choices": [
+        {
+          "id": "wait",
+          "label": "Wait for the lift",
+          "next": "long-corridor"
+        }
+      ],
+      "captions": "closing-en-v2.vtt"
+    },
+    {
+      "id": "long-corridor",
+      "chapter": "02 · No way up",
+      "title": "Farther away",
+      "video": "corridor-reopens-ring-v3.mp4",
+      "captions": "long-corridor-en-v3.vtt",
+      "poster": "corridor-reopens-v2.jpeg",
+      "duration": 8,
+      "productionNote": "New Flow-generated picture and audio. Visual continuity checked; final listening and dialogue review remains required.",
+      "text": [
+        "The doors open again. The corridor stretches much farther into the darkness, but the attendant's voice sounds closer.",
+        "The emergency telephone keeps ringing."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Attendant",
+          "line": "Your room has been waiting for a very long time."
+        }
+      ],
+      "choices": [
+        {
+          "id": "answer",
+          "label": "Answer the emergency phone",
+          "next": "phone"
+        }
+      ]
+    },
+    {
+      "id": "phone",
+      "chapter": "02 · A familiar voice",
+      "title": "Your own voice",
+      "video": "phone-sound-v2.mp4",
+      "poster": "phone.jpeg",
+      "duration": 8,
+      "text": [
+        "You lift the receiver. The voice on the other end is yours — older, exhausted, whispering.",
+        "The line stays open. You look down: an open guest register lies on the wet carpet beside the lift."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Your voice",
+          "line": "Alex. Don't say your name. Silence this line before you erase it from the book."
+        }
+      ],
+      "clue": "The hotel keeps names it hears. Silence the emergency line before erasing your entry.",
+      "choices": [
+        {
+          "id": "register",
+          "label": "Inspect the guest register",
+          "next": "register"
+        }
+      ],
+      "captions": "phone-en-v2.vtt"
+    },
+    {
+      "id": "register",
+      "chapter": "03 · The reservation",
+      "title": "You have stayed here before",
+      "video": "register-sound-v2.mp4",
+      "poster": "register.jpeg",
+      "duration": 8,
+      "productionNote": "Revised picture edit with English synthetic dialogue where scripted and added ambience. Final listening review remains required.",
+      "text": [
+        "Only one entry is dry: ALEX MORGAN. Check-in: 17 September 1726. Check-out: —.",
+        "A printed rule sits beneath your entry: A name spoken is a name kept.",
+        "An antique key rests on the facing page. You can accept the room, try the lift, or remove the reservation."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Attendant",
+          "line": "Would you like to confirm your reservation, Mr Morgan?"
+        }
+      ],
+      "clue": "The register lists Alex Morgan as a guest since 1726. Leaving the floor may not end the reservation.",
+      "choices": [
+        {
+          "id": "check-in",
+          "label": "Accept the key and step out",
+          "next": "check-in"
+        },
+        {
+          "id": "surface",
+          "label": "Leave the book. Return to ground floor",
+          "next": "surface"
+        },
+        {
+          "id": "erase",
+          "label": "Erase your name from the register",
+          "next": "erase",
+          "requiresMuted": true
+        }
+      ],
+      "captions": "register-en-v2.vtt"
+    },
+    {
+      "id": "check-in",
+      "chapter": "Ending 01 / 03",
+      "title": "Check-In",
+      "video": "check-in-transformation-v3.mp4",
+      "poster": "check-in-transformation-v3.jpeg",
+      "duration": 8,
+      "ending": "Check-In",
+      "text": [
+        "You accept the key. The lights go out for a heartbeat.",
+        "Light returns. White gloves cover your hands; gold-trimmed uniform cuffs replace your own sleeves.",
+        "You know what to say. You must not turn around."
+      ],
+      "dialogue": [
+        {
+          "speaker": "You",
+          "line": "We have been expecting the surface guest."
+        }
+      ],
+      "choices": [],
+      "captions": "check-in-en-v3.vtt",
+      "productionNote": "Flow picture recut to remove unintended fire and reopening; synthetic English dialogue. Automated speech check supplements, but does not replace, final listening review."
+    },
+    {
+      "id": "surface",
+      "chapter": "Ending 02 / 03",
+      "title": "Surface",
+      "video": "surface-sound-v2.mp4",
+      "poster": "city.jpeg",
+      "duration": 6,
+      "ending": "Surface",
+      "productionNote": "Revised picture edit with English synthetic dialogue where scripted and added ambience. Final listening review remains required.",
+      "text": [
+        "The lift returns to the ground floor. Beyond the glass, your city lies beneath an endless ocean.",
+        "Your name is still in the register. The hotel has not let you go. It has brought the world down to meet you."
+      ],
+      "dialogue": [
+        {
+          "speaker": "Your voice",
+          "line": "You left the hotel. Your name didn't."
+        }
+      ],
+      "choices": [],
+      "captions": "surface-en-v2.vtt"
+    },
+    {
+      "id": "erase",
+      "chapter": "03 · Break the reservation",
+      "title": "An empty line",
+      "video": "erase-sound-v2.mp4",
+      "poster": "register.jpeg",
+      "duration": 8,
+      "productionNote": "Revised picture edit with English synthetic dialogue where scripted and added ambience. Final listening review remains required.",
+      "text": [
+        "With the emergency line silent, you erase ALEX MORGAN. The date and the rule fade with it.",
+        "The page is blank. The reservation is gone. Somewhere inside the lift, the motor starts again."
+      ],
+      "dialogue": [],
+      "choices": [
+        {
+          "id": "return",
+          "label": "Step into the lobby",
+          "next": "nameless"
+        }
+      ]
+    },
+    {
+      "id": "nameless",
+      "chapter": "Ending 03 / 03",
+      "title": "Nameless",
+      "video": "nameless-doorman-v2.mp4",
+      "captions": "nameless-en-v3.vtt",
+      "poster": "nameless-doorman-v2.jpeg",
+      "duration": 8,
+      "ending": "Nameless",
+      "productionNote": "New Flow-generated picture and audio. Visual continuity checked; final listening and dialogue review remains required.",
+      "text": [
+        "The lobby is dry. Ordinary daylight falls across the marble. You think you have escaped.",
+        "The doorman has greeted you every morning for ten years. Now he raises his hand and refuses to let you pass.",
+        "The hotel has forgotten you. So has everyone else."
+      ],
+      "dialogue": [
+        {
+          "speaker": "You",
+          "line": "You know me."
+        },
+        {
+          "speaker": "Doorman",
+          "line": "I am sorry. Nobody by that name lives here."
+        }
+      ],
+      "choices": []
+    }
+  ]
+}

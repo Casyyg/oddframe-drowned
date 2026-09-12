@@ -1,0 +1,199 @@
+{
+  "storyId": "she-says-shes-my-mother",
+  "title": "She Says She's My Mother",
+  "version": "peephole-english-animatic-v1",
+  "language": "en",
+  "startSceneId": "01_someone_at_the_door",
+  "mediaType": "voiced motion-still animatic",
+  "visualPOV": "physical optical peephole from inside the apartment",
+  "intercom": "separate fictional audio system; no real microphone permission needed",
+  "scenes": [
+    {
+      "sceneId": "01_someone_at_the_door",
+      "title": "SOMEONE AT THE DOOR",
+      "video": "videos/01_someone_at_the_door.mp4",
+      "poster": "posters/01_someone_at_the_door.jpg",
+      "subtitles": "subtitles/01_someone_at_the_door.en.vtt",
+      "duration": 18.666666666666668,
+      "choices": [
+        {
+          "choiceId": "call",
+          "label": "Ask her, then call Mum",
+          "nextSceneId": "02_two_mothers"
+        }
+      ],
+      "ending": null,
+      "intercomState": {
+        "listen": true,
+        "talk": true
+      }
+    },
+    {
+      "sceneId": "02_two_mothers",
+      "title": "TWO MOTHERS",
+      "video": "videos/02_two_mothers.mp4",
+      "poster": "posters/02_two_mothers.jpg",
+      "subtitles": "subtitles/02_two_mothers.en.vtt",
+      "duration": 27.041666666666668,
+      "choices": [
+        {
+          "choiceId": "listen",
+          "label": "Listen carefully",
+          "nextSceneId": "03_the_cough"
+        }
+      ],
+      "ending": null,
+      "intercomState": {
+        "listen": true,
+        "talk": true
+      }
+    },
+    {
+      "sceneId": "03_the_cough",
+      "title": "THE COUGH",
+      "video": "videos/03_the_cough.mp4",
+      "poster": "posters/03_the_cough.jpg",
+      "subtitles": "subtitles/03_the_cough.en.vtt",
+      "duration": 20.416666666666668,
+      "choices": [
+        {
+          "choiceId": "question",
+          "label": "Ask a personal question",
+          "nextSceneId": "03b_the_question"
+        },
+        {
+          "choiceId": "mic_off",
+          "label": "Turn off outgoing microphone",
+          "nextSceneId": "04_cut_the_connection"
+        },
+        {
+          "choiceId": "listen_off",
+          "label": "Turn off listening only",
+          "nextSceneId": "08_the_wrong_switch"
+        },
+        {
+          "choiceId": "unlock",
+          "label": "Unlock the door",
+          "nextSceneId": "07_family"
+        }
+      ],
+      "ending": null,
+      "intercomState": {
+        "listen": true,
+        "talk": true
+      }
+    },
+    {
+      "sceneId": "03b_the_question",
+      "title": "THE QUESTION",
+      "video": "videos/03b_the_question.mp4",
+      "poster": "posters/03b_the_question.jpg",
+      "subtitles": "subtitles/03b_the_question.en.vtt",
+      "duration": 13.291666666666666,
+      "choices": [
+        {
+          "choiceId": "mic_off",
+          "label": "Turn off outgoing microphone",
+          "nextSceneId": "04_cut_the_connection"
+        },
+        {
+          "choiceId": "listen_off",
+          "label": "Turn off listening only",
+          "nextSceneId": "08_the_wrong_switch"
+        }
+      ],
+      "ending": null,
+      "intercomState": {
+        "listen": true,
+        "talk": true
+      }
+    },
+    {
+      "sceneId": "04_cut_the_connection",
+      "title": "CUT THE CONNECTION",
+      "video": "videos/04_cut_the_connection.mp4",
+      "poster": "posters/04_cut_the_connection.jpg",
+      "subtitles": "subtitles/04_cut_the_connection.en.vtt",
+      "duration": 24.083333333333332,
+      "choices": [
+        {
+          "choiceId": "wait",
+          "label": "Keep watching through the peephole",
+          "nextSceneId": "05_the_last_attempt"
+        }
+      ],
+      "ending": null,
+      "intercomState": {
+        "listen": true,
+        "talk": false
+      }
+    },
+    {
+      "sceneId": "05_the_last_attempt",
+      "title": "THE LAST ATTEMPT",
+      "video": "videos/05_the_last_attempt.mp4",
+      "poster": "posters/05_the_last_attempt.jpg",
+      "subtitles": "subtitles/05_the_last_attempt.en.vtt",
+      "duration": 21.291666666666668,
+      "choices": [
+        {
+          "choiceId": "locked",
+          "label": "Keep the door locked",
+          "nextSceneId": "06_she_didnt_hear_you"
+        },
+        {
+          "choiceId": "unlock",
+          "label": "Let her in",
+          "nextSceneId": "07_family"
+        }
+      ],
+      "ending": null,
+      "intercomState": {
+        "listen": true,
+        "talk": false
+      }
+    },
+    {
+      "sceneId": "06_she_didnt_hear_you",
+      "title": "SHE DID NOT HEAR YOU",
+      "video": "videos/06_she_didnt_hear_you.mp4",
+      "poster": "posters/06_she_didnt_hear_you.jpg",
+      "subtitles": "subtitles/06_she_didnt_hear_you.en.vtt",
+      "duration": 20.708333333333332,
+      "choices": [],
+      "ending": "ENDING A",
+      "intercomState": {
+        "listen": true,
+        "talk": false
+      }
+    },
+    {
+      "sceneId": "07_family",
+      "title": "FAMILY",
+      "video": "videos/07_family.mp4",
+      "poster": "posters/07_family.jpg",
+      "subtitles": "subtitles/07_family.en.vtt",
+      "duration": 15.375,
+      "choices": [],
+      "ending": "ENDING B",
+      "intercomState": {
+        "listen": true,
+        "talk": true
+      }
+    },
+    {
+      "sceneId": "08_the_wrong_switch",
+      "title": "THE WRONG SWITCH",
+      "video": "videos/08_the_wrong_switch.mp4",
+      "poster": "posters/08_the_wrong_switch.jpg",
+      "subtitles": "subtitles/08_the_wrong_switch.en.vtt",
+      "duration": 19.083333333333332,
+      "choices": [],
+      "ending": "ENDING C",
+      "intercomState": {
+        "listen": false,
+        "talk": true
+      }
+    }
+  ]
+}
